@@ -8,7 +8,7 @@ Created by [Gabriel Gosselin](https://twitter.com/fggosselin) and [Darcie Millik
 
 Email questions & comments to <content@ladieslearningcode.com>.
 
-### Contributing
+### Contributing : This workshop is being retired, new contributions are not necessary. 
 
 **Instructors:**  
 To make the content city specific, you can edit the examples in slide numbers 38-39, 45-47 and 51 to reflect your Ladies Learning Code chapter city's information.
