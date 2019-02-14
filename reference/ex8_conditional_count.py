@@ -10,6 +10,7 @@ painfully literal, so your search terms have to match exactly)
 Once we know how many people attended last year, we can aim to increase that number in 2015!
 """
 
+from __future__ import print_function
 import csv
 import os
 

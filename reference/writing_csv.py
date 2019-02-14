@@ -13,7 +13,7 @@ import os
 with open(os.path.join(os.pardir, 'exercises', 'llc-workshop-data.csv')) as workshop_file:
 
     # open takes a second 'mode' argument that allows you to get a file ready to 'write in binary mode' so we can output
-    with open('filtered.csv', 'wb') as filtered_file:
+    with open('filtered.csv', 'w') as filtered_file:
         workshops_data = csv.DictReader(workshop_file)
 
         # Note: We're reading the fieldnames from the llc-workshop-data.csv so the DictWriter knows what to write to the file

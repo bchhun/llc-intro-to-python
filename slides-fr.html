@@ -33,7 +33,7 @@
   <header class="slide">
     <img class="logo" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
     <h1>Bienvenue chez Ladies Learning Code!</h1>
-      
+
     <div class="instructions">
       <!-- TODO: Add wifi info here -->
       <!--
@@ -48,18 +48,16 @@
         <li><em>unzip</em> les fichiers de l'apprenti(e) préalablement t&eacute;l&eacute;charg&eacute;s (<em>extraire tous</em> si vous êtes sur PC)</li>
         <li>ouvrez <strong>slides-fr.html</strong> dans votre navigateur pour suivre les diapos</li>
       </ul>
-      <p>2. Python 2.7.x</p>
+      <p>2. Python 3.6</p>
       <ul>
         <li>Windows - <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></li>
-        <li>Mac - pré-installé. Allez dans <strong>Applications &gt; Utilities &gt; Terminal</strong><br>
-          Dans la fenêtre de terminal tapez «python» pour confirmer l'installation.</li>
       </ul>
       <p>3. PyCharm Educational Edition<br>
         <a href="https://www.jetbrains.com/pycharm-educational">https://www.jetbrains.com/pycharm-educational</a>
       </p>
     </div>
     <div class="sponsor">
-      <p>En partenariat avec 
+      <p>En partenariat avec
       <img src="framework/img/telus-logo-white.svg" alt="Telus logo"></p>
     </div>
   </header>
@@ -79,10 +77,10 @@
              <li><i class="fa fa-envelope"></i><a href="mailto:">bernard.chhun@gmail.com</a></li>
              <li><i class="fa fa-desktop"></i><a href="http://bernardchhun.com">bernardchhun.com</a></li>
              <li><i class="fa fa-twitter"></i><a href="http://twitter.com/bechhun">@bechhun</a></li>
-         </ul> 
+         </ul>
          <!-- Add wifi info here -->
          <h4>Connectez-vous au réseau sans fil</h4>
-         <p>Réseau: spektrum - mot de passe: spektrumrocks4ever</p> 
+         <p>Réseau: spektrum - mot de passe: spektrumrocks4ever</p>
         <div class="sponsor">
           <p>En partenariat avec</p>
           <img src="framework/img/telus-logo-white.svg" alt="Telus logo">
@@ -94,12 +92,6 @@
       <script type="text/template">
         # Projet d'aujourd'hui
 
-        ![](framework/img/workshop/learn-to-code-day.jpg)
-        Imaginez que vous devez organiser **la Journée nationale de l'apprentissage du code de 2016**. 
-        
-        Vous souhaitez que ce soit un aussi gros succès que l'année précédente. 
-        Non seulement vous aurez besoin de savoir combien de personnes seront présentes (pour battre ce record) mais vous souhaitez aussi recueillir d'intéressantes statistiques afin d'étayer votre communiqué de presse.
-        
         Aujourd'hui, vous apprendrez comment «réfléchir» comme un ordinateur tout en recueillant de précieuses &laquo;informations&raquo; au sujet des apprenti(e)s de l'événement de Ladies Learning Code en 2015.
       </script>
     </section>
@@ -130,9 +122,9 @@
       <script type="text/template">
         ## Qu'est-ce que la programmation ?
 
-        * Simplement: la programmation consiste à donner des instructions à un ordinateur dans un format qu'il peut comprendre. 
-        * Les ordinateurs ont besoin d'instructions *très précises*.
-        * Les langages de programmation ont des syntaxes comme les langues humaines ont des règles de grammaire. 
+        * Simplement: la programmation consiste à donner des instructions à un ordinateur dans un format qu'il peut comprendre.
+        * Les ordinateurs ont besoin d'instructions *très précises*
+        * Les langages de programmation ont des syntaxes comme les langues humaines ont des règles de grammaire.
 
         <br>
         ### Pourquoi Python est-il fantastique ?
@@ -184,7 +176,7 @@
 
       Vous aurez besoin de:
 
-      1. **Python 2.7.x installé** ( [Mac](https://www.python.org/downloads/), [Windows](https://www.python.org/downloads/windows/) )
+      1. **Python 3.6.x installé** ( [Mac](https://www.python.org/downloads/), [Windows](https://www.python.org/downloads/windows/) )
       1. **[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)**
       1. [Les fichiers de l'apprenti(e) LLC (qui contiennent les exercices et les fichiers de référence)](https://github.com/ladieslearningcode/llc-intro-to-python/archive/master.zip).
     </section>
@@ -203,7 +195,7 @@
       <script type="text/template">
         ## Organisez les fichiers de votre projet
 
-        Ouvrez PyCharm et sélectionnez **Open**.  
+        Ouvrez PyCharm et sélectionnez **Open**.
         Naviguez vers le dossier **llc-intro-to-python-master** & sélectionnez **Choose**.
 
         ![](framework/img/workshop/pycharm-project1.png)
@@ -211,10 +203,11 @@
 
         Les fichiers contenus dans le dossier vont apparaître dans l'espace à gauche. Utilisez les flèches pour ouvrir les dossiers.
 
-        Aujourd'hui, vous travaillerez dans le dossier **exercices**. Le dossier **reference** contient les réponses à titre de &laquo;référence&raquo;.        
-       
-        Les autres dossiers et fichiers vous serviront à faire fonctionner cette présentation.
-        Évitez de les modifier !
+        Aujourd'hui, vous travaillerez dans le dossier **exercices**. Le dossier **reference** contient les réponses à titre de &laquo;référence&raquo;.
+
+       Les autres dossiers & fichiers vous serviront à faire fonctionner cette présentation.
+       Évitez de les modifier !
+
 
         ![](framework/img/workshop/pycharm-project3.png)
       </script>
@@ -223,13 +216,13 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Rouler Python dans PyCharm
-        
+
         La console est un outil interactif utilisé pour tester et débugger du code. Il est inclus dans PyCharm ! Ouvrons la console:
 
         ![Tools &gt; Python Console&hellip;](./framework/img/workshop/open-console1.png)
 
         La console va s'ouvrir dans le bas de l'application. Écrivez du code (intructions) après le symbole vert `>>>`. Ce symbole est utilisé pour représenter un espace pour votre entrée sans avoir à l'écrire complètement.
-        
+
         ![Python Console in PyCharm](./framework/img/workshop/open-console2.png)
 
         **Truc de pro!** Vous pouvez aussi fermer la console en sélectionnant l'icone en bas à gauche de PyCharm.
@@ -244,7 +237,7 @@
       <script type="text/template">
         ## Python peut faire des maths
 
-        Dans la console, après le `>>>`, essayez ces exemples.  
+        Dans la console, après le `>>>`, essayez ces exemples.
 
         La commande entrée après le `>>>` est *évaluée* et la valeur vous sera retournée.
 
@@ -269,6 +262,8 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Les types de données
+
+        Dans l'exemple précédent, on utilisait des nombres de type **entier** (<em>integers</em>), mais il y a plusieurs autres types de données.
 
         Dans l'exemple précédent, on utilisait des nombres de type **entier** (<em>integer</em>), mais il y a plusieurs autres types de données.
 
@@ -297,9 +292,9 @@
       <script type="text/template">
         ## Les fonctions
 
-        * Les fonctions sont des ensembles d'instructions qui peuvent être réutilisés.
-        * Réutiliser des fonctions aide à réduire la redondance.
-        * Les fonctions prennent des **arguments** et peuvent **retourner** des valeurs.
+        * Les fonctions sont des ensembles d'instructions qui peuvent être réutilisés
+        * Réutiliser des fonctions aide à réduire la redondance
+        * Les fonctions prennent des **arguments** et peuvent **retourner** des valeurs
 
         ex: la fonction `ajout` prend `a` et `b` comme arguments et **retournera** le résultat.
 
@@ -318,9 +313,9 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Imprimer 
-        
-        La **fonction** `print()` retourne une valeur à l'écran. 
+        ## Imprimer
+
+        La **fonction** `print()` retourne une valeur à l'écran.
 
         Observez la syntaxe dans les exemples. Les guillemets doivent être inclus quand vous utilisez une donnée de type *string*.
 
@@ -344,7 +339,7 @@
         >>> print("Hello " + "World!")
         Hello World!
         ```
-        
+
         <br>
         Mais que se passe-t-il si nous essayons d'additionner une string et un nombre?
 
@@ -362,7 +357,7 @@
         ## Pourquoi cette erreur est apparue?
 
         Python a besoin de savoir le type des données avec lesquelles il doit travailler.
-        
+
         Regardons cette erreur de plus près.
 
         ```python
@@ -371,10 +366,10 @@
         File "<input>", line 1, in <module>
         TypeError: unsupported operand type(s) for +: 'int' and 'str'
         ```
-        
+
         <br>
         Le premier `2` est une valeur de type **integer** (nombre entier), et le second `"2"` est une valeur de type **string**.
-        
+
         Python ne sait pas comment additionner un nombre et une string: il renvoie donc une erreur.
       </script>
     </section>
@@ -386,16 +381,16 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Convertir des types
-        
-        Avec Python, vous pouvez *changer le type de vos valeurs*. 
-        
+
+        Avec Python, vous pouvez *changer le type de vos valeurs*.
+
         Dans cet exemple, la fonction `int()` peut être utilisée pour convertir le type de la «string» `"2"` en un nombre.
 
         ```
         >>> print(2 + int("2"))
         4
         ```
-        
+
         <br>
         Vous vous souvenez de l'exemple `1/2 = 0` ? quand Python divise deux **integers**, il &laquo;arrondit&raquo; le résultat au plus petit nombre entier (dans ce cas 0).
 
@@ -417,16 +412,16 @@
         >>> print("les élections " + 2015)
         Traceback (most recent call last):
         File "<input>", line 1, in <module>
-        TypeError: cannot concatenate 'str' and 'int' objects 
+        TypeError: cannot concatenate 'str' and 'int' objects
         ```
-        
+
         Utilisez la fonction `str()` pour convertir un nombre en «string».
 
         ```
         >>> print("les élections " + str(2015))
 
         ```
-        
+
         Savoir comment convertir des types avec Python vous sera très pratique plus tard !
       </script>
     </section>
@@ -440,7 +435,7 @@
         ## Les variables
         * Elles sont utilisées pour stocker une valeur pour toutes les fois où elle va être utilisée.
         * Les variables stockent des données dans la mémoire de l'ordinateur, et le nom de la variable est utilisé pour aller chercher leur valeur (comme un marque-page dans un livre).
-        
+
         Utilisez le symbole (`=`) pour *assigner* une valeur à une variable.
 
         ```python
@@ -455,7 +450,7 @@
         >>> print("Aujourdhui, nous sommes " + aujourdhui)
         Aujourdhui, nous sommes samedi
         ```
-        Vous pouvez stocker à peu près n'importe quoi dans une variable. 
+        Vous pouvez stocker à peu près n'importe quoi dans une variable.
       </script>
     </section>
 
@@ -476,8 +471,8 @@
         <span class="delayed">50</span>
 
         Pourquoi ?<!-- .element: class="delayed" -->
-        
-        Vous avez changé <!-- .element: class="delayed" -->`y`, mais l'ancienne valeur `x` est encore en mémoire.   
+
+        Vous avez changé <!-- .element: class="delayed" -->`y`, mais l'ancienne valeur `x` est encore en mémoire.
         Python se rappellera des noms des variables tant que vous ne fermerez pas PyCharm ou que vous ne [les effacerez pas manuellement](https://docs.python.org/2/tutorial/datastructures.html#the-del-statement).
       </script>
     </section>
@@ -485,14 +480,14 @@
     <section class="slide list-font-default" data-markdown>
       <script type="text/template">
         ## Comment nommer une variable ?
-        
+
         Voici quelques trucs et bonnes pratiques pour composer des noms de variables:
 
         * Les noms de variables ne peuvent contenir que des lettres, des nombres et des barres de soulignement (<em>underscore</em> `_`) ou des tirets `-` mais pas d'espace ni d'accent!
 
         * Séparez les mots avec des barres de soulignement `_`
-          * ex: `ladies_learning_code` 
-        
+          * ex: `ladies_learning_code`
+
         * Ils ne peuvent débuter avec des nombres
           * ex: `1jour` vous donnera une erreur; `jour1` sera ok
 
@@ -506,12 +501,12 @@
         ## Truc de pro: Écrivez des commentaires!
 
         Les programmeurs utilisent des *commentaires* pour laisser des notes (pour eux-mêmes et tous ceux qui liront leur code dans le futur).
-        
+
         De bons commentaires clarifieront du code plus complexe, des trucs moins évidents.
 
         Vous pouvez aussi utiliser les commentaires pour organiser votre code ou pour "cacher" des parties de code que vous ne souhaitez pas utiliser ni effacer. Ajoutez-en dans l'exercice!
-      
-        
+
+
         Jetez un oeil à la syntaxe ci-dessous:
 
         ```
@@ -527,22 +522,22 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Exercice 1: Hello World
-        
+
         À la place d'afficher simplement 'Hello World' sur l'écran, allons un peu plus loin et utilisons Python pour saluer tout le monde!
-      
+
         Essayez d'utiliser a fonction `raw_input()` en Python 2 (ou `input` si vous avez installé Python 3). De cette façon, les données entrées par un utilisateur vous seront **retournées**.
-        
+
         1. Donnez à `raw_input()` (ou `input()`) un message demandant une information précise à l'utilisateur
-        1. L'utilisateur entre quelque chose et appuie sur la touche **entrée** 
+        1. L'utilisateur entre quelque chose et appuie sur la touche **entrée**
         1. Peu importe ce que l'utilisateur entre, cette information vous est **retournée**.
-  
+
         Essayez-le dans la console:
 
         Python 2
         ```python
         >>> raw_input("Quel est votre nom?")
         ```
-        
+
         Python 3
         ```python
         >>> input("Quel est votre nom?")
@@ -553,7 +548,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Exercice 1: Hello World (partie 2)
-        
+
         Utiliser la console est pratique pour tester des petites parties de code mais on peut faire encore bien mieux. Python peut rouler du code depuis un fichier qui possède l'**extension** `.py`. Créons ensemble un premier fichier Python !
 
         1. Faites un clique à droite sur le dossier **"exercises"** pour créer un nouveau fichier. Sélectionnez **New > Python File**
@@ -579,7 +574,7 @@
           # Your program waits for the user to hit enter
           nom = input("S.V.P entrez votre nom: ")
           ```
-        
+
           ```python
           # ... Puis continuez sur cette ligne
           print("Bonjour " + nom)
@@ -595,14 +590,14 @@
 
         1. Pour rouler le code, sélectionnez le symbole de la flèche verte. PyCharm sauvegarde automatiquement votre fichier avant de le rouler.
 
-          ![](framework/img/workshop/pycharm-run.png)  
+          ![](framework/img/workshop/pycharm-run.png)
 
           Vous le retrouverez également dans le menu sous **View > Tool Windows > Run**
 
         1. Cliquez dans la fenêtre de la console, tapez votre nom et pressez **Entrée**. Vous devriez voir votre nom.
 
           ![Demo of hello_world example](./framework/img/workshop/ex1-hello-world.png)
-        
+
         <br>
         Vous pouvez rouler votre programme aussi souvent que vous le voulez en répétant les étapes ci-dessus.
       </script>
@@ -616,9 +611,9 @@
       <script type="text/template">
         ## Conditionelles &amp; Logique
         Le programme que vous venez d'écrire vient de s'exécuter de haut en bas. Que se passerait-il si le programme pouvait décider quoi faire à la place ? Les déclarations `if` peuvent exécuter différentes séries d'instructions basées sur des conditions spécifiques.
-        
+
         Chaque déclaration `if` contient un test. Le bloc indenté est le code qui sera exécuté *si* le test s'avère `vrai` et ressemble à ceci:
-      
+
         ```python
         # Ceci n'est pas du vrai code
         if il fait froid dehors:
@@ -653,7 +648,7 @@
         >>> meteo = "pluvieux"
         ```
 
-        Le symbole égal double (`==`) va évaluer si la valeur de droite correspond à la valeur *assignée* et peut servir à tester la valeur. 
+        Le symbole égal double (`==`) va évaluer si la valeur de droite correspond à la valeur *assignée* et peut servir à tester la valeur.
         ```
         >>> meteo == "froid"
         False
@@ -672,15 +667,15 @@
         ## Exercice 2: Vérificateur de température (10 minutes)
 
         Créez un nouveau fichier et appelez-le `ex2_conseil_meteo.py`.
-        
+
         Utilisez l'extrait de code plus bas comme référence, mais essayez d'écrire votre code au lieu de faire un copier-coller; c'est dans le but d'apprendre la syntaxe.
-        
+
         Remarquez l'indentation. Python l'utilise pour séparer les blocs de code qui appartiennent à la clause `if` ou `else`.
 
         ```python
         # file: ex2_conseil_meteo.py
         ```
-        
+
         Python 2
         ```python
         meteo = raw_input("Quel temps fait-il? (froid, pluvieux, etc.)")
@@ -690,7 +685,7 @@
         ```python
         meteo = input("Quel temps fait-il? (froid, pluvieux, etc.)")
         ```
-        
+
         ```python
         if meteo == "froid":
             print("Mets un chandail!")
@@ -706,7 +701,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## L'indentation
-        
+
         Lorsque vous tapez `if` ou `else` dans la console au lieu d'un fichier *.py, vous verrez quelque chose comme ceci:
 
         ```python
@@ -714,8 +709,8 @@
         ...
         ```
 
-        Les `...` représentent l'indentation automatisée et vous signalent que la ligne de commande s'attend à du code indenté. 
-        
+        Les `...` représentent l'indentation automatisée et vous signalent que la ligne de commande s'attend à du code indenté.
+
         ```python
         >>> if meteo == "froid":
         ...     print("Mets un chandail!")
@@ -1023,7 +1018,7 @@
 
         Dans le fichier `llc-chapters.csv`, chaque ligne représente un chapitre de Ladies Learning Code
 
-        Essayons d'en imprimer quelques lignes, une à la fois 
+        Essayons d'en imprimer quelques lignes, une à la fois
 
         ```python
         >>> with open('./exercises/llc-chapters.csv') as chapters:
@@ -1118,7 +1113,7 @@
         ## L'utilisation d'un module
 
         Jusqu'ici, nous avons rédigé notre code dans une console ou dans un fichier.
-        
+
         Quand nous utilisons un module, nous ne voulons pas copier tout son code dans notre fichier; il serait énorme !
 
         Au lieu de cela, nous devons **importer** les fonctions et les autres structures de données d'un module que nous voulons utiliser.
@@ -1151,7 +1146,7 @@
         Aujourd'hui, nous utiliserons principalement l'outil `DictReader` pour accéder aux valeurs dans le fichier.
 
         1. Importons le module `csv`
-        1. Ouvrons le fichier 
+        1. Ouvrons le fichier
         1. Passons le fichier dans la moulinette du `DictReader`
 
         ```
@@ -1304,7 +1299,7 @@
         -1
         ```
 
-        La méthode `.find()` est sensible à la casse; elle ne cherchera que la chaîne de caractères que vous avez saisie; rien de plus, rien de moins. 
+        La méthode `.find()` est sensible à la casse; elle ne cherchera que la chaîne de caractères que vous avez saisie; rien de plus, rien de moins.
 
         *<!-- .element: class="footnote" --> Quand nous disions que les ordinateurs avaient besoin d'instructions précises, et bien cela est un bon exemple !*
       </script>
@@ -1319,7 +1314,7 @@
         Vous pouvez utiliser la méthode `.find()` pour trouver ce caractère et déterminer quelles villes possèdent un ou une co-responsable.
 
         N'oubliez pas que la méthode `.find()` retourne l'index de la position dans la chaîne de caractère dans laquelle vous faites la recherche. Elle retournera `-1` si elle ne trouve rien.
-        
+
         Essayez d'utiliser l'opérateur de comparaison `>=` pour savoir si la chaîne de caractères recherchée a été trouvée.
 
         ```python
@@ -1346,6 +1341,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Visez haut
+
 
         Jusqu'ici, nous avons utilisé des exemples simples pour pratiquer ce que vous avez appris.
 
@@ -1382,7 +1378,7 @@
         ## Exercice bonus: un hackaton de données ouvertes
 
         Si vous désirez utiliser une autre source de données, il en existe des publiques !
-        
+
         Le gouvernement du Canada en publie plusieurs. En [voici quelques uns](https://docs.google.com/spreadsheets/d/14fFZPKrb0RrKpjiAQYshwT3iYkTRGKeeFcpz3r8m8Qg) (la quantité d'oeuvre de charité au pays, des estimés de population, un index du prix des propriétés et plus...)
 
         **Un conseil de pro !** Ouvrez ces données avec Excel ou [LibreOffice](https://www.libreoffice.org/) pour consulter les données plus aisément.

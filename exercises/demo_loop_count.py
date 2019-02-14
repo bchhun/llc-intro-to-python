@@ -1,10 +1,13 @@
 import csv
 
-with open('llc-chapters.csv') as csv_file:
-    csv_data = csv.DictReader(csv_file)
+with open('./llc-chapters.csv') as chapter_file:
+    chapters_data = csv.DictReader(chapter_file)
 
-    count = 0
-    for row in csv_data:
-        count += 1
+    # identifier les chapter leads qui sont seul et qui sont en
+    # ontario
+    for chapter in chapters_data:
+        is_in_ontario = chapter.get('Province') == 'ON'
+        is_alone = "&" not in chapter.get('Chapter Lead(s)')
 
-    print("There are " + str(count) + " chapters")
+        if is_in_ontario and is_alone:
+            print(chapter.get('Chapter Lead(s)'))

@@ -5,6 +5,7 @@ Python is said to come with 'batteries included' – a number of utility librari
 In this exercise, we'll open a CSV file with one of the built-in utilities and read some data from a row.
 """
 
+from __future__ import print_function
 import csv
 import os
 

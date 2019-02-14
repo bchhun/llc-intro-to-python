@@ -1,3 +1,9 @@
+from __future__ import print_function
+
+import sys
+
+if sys.version_info > (3,0):
+    raw_input = input
 
 weather = raw_input("What is the weather? (cold, raining, etc.): ")
 

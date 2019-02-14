@@ -9,6 +9,7 @@ until it reaches the end
 We can use a variable to count the number of loops, and that will give us the total number of rows in the file
 """
 
+from __future__ import print_function
 import csv
 import os
 
